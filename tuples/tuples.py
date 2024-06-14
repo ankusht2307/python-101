@@ -16,13 +16,26 @@ print(type(thistuple))
 thistuple = ("apple")
 print(type(thistuple))
 
-tuple1 = ("apple", "banana", "cherry")
-tuple2 = (1, 5, 7, 9, 3)
-tuple3 = (True, False, False)
-tuple4 = ("abc", 34, True, 40, "male")
+#  Using constructor
+thistuple1 = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+print(thistuple1)
 
-thistuple5 = tuple(("apple", "banana", "cherry")) # note the double round-brackets
-print(thistuple5)
+# Access Tuple items
+pets = ('dog', 'cat', 'parrot', 'bird')
+print(pets[1])
+
+# Unpack tuples
+(dog, cat, bird1, birds) = pets
+print(dog)
+print(cat)
+print(bird1)
+print(birds)
+
+# Using Asterisk(*) to unpack
+(dog, cat, *birdies) = pets
+print(dog)
+print(cat)
+print(birdies)
 
 
 
